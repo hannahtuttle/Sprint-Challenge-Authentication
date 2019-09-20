@@ -19,14 +19,14 @@ const Jokes = props => {
 
 
     return(
-    <>
+    <div className='jokeContainer'>
         {jokes.map(joke => {
-            return (<div key={joke.id}>
+            return (<div className ='jokeCard' key={joke.id}>
                 <p>{joke.joke}</p>
             </div>)
         })}
         <button>Log out</button>
-    </>) 
+    </div>) 
 }
 
 export default Jokes;

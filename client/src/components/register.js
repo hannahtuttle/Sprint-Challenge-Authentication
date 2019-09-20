@@ -23,12 +23,13 @@ const Register = props => {
     }
 
     return (
-        <form onSubmit ={event => handleSubmit(event)}>
+        <form className='register' onSubmit ={event => handleSubmit(event)}>
             <h3>Sign up</h3>
             <label>Username</label>
             <input 
             name="username"
             type= 'text'
+            className='input'
             value={user.username}
             onChange={event => handleChange(event)}
             />
@@ -36,10 +37,11 @@ const Register = props => {
             <input 
             name= 'password'
             type= 'text'
+            className='input'
             value={user.password}
             onChange={event => handleChange(event)}
             />
-            <button type='submit'>submit</button>
+            <button className='submit' type='submit'>submit</button>
         </form>
     )
 }

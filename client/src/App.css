@@ -2,21 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.register {
+  width:30%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 2px;
 }
 
-.App-link {
-  color: #09d3ac;
+.input{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom:7%;
+  margin-top: 4%;
+  padding:1%;
+}
+
+.submit{
+  width: 50%;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  padding:1%;
+}
+
+.jokeCard{
+  width: 30%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.jokeContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

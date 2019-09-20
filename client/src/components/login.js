@@ -26,12 +26,13 @@ const Login = props => {
 
     return (
        
-        <form onSubmit ={event => handleSubmit(event)}>
+        <form className='register' onSubmit ={event => handleSubmit(event)}>
             <h3>Login</h3>
             <label>Username</label>
             <input 
             name="username"
             type= 'text'
+            className="input"
             value={user.username}
             onChange={event => handleChange(event)}
             />
@@ -39,10 +40,11 @@ const Login = props => {
             <input 
             name= 'password'
             type= 'text'
+            className="input"
             value={user.password}
             onChange={event => handleChange(event)}
             />
-            <button type='submit'>Login</button>
+            <button className='submit'type='submit'>Login</button>
         </form>)
        
 }
